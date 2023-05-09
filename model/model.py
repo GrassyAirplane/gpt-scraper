@@ -11,9 +11,11 @@ res = classifier([
                     "Zoe is stinky poo poo"
                 ])
 
-classifier = pipeline("ner", grouped_entities=True)
-#print(classifier("My name is Sylvain and I work at Hugging Face in Brooklyn. Malaysia, Kuala Lumpur, RIMBA RESIDENCE"))
-print(classifier("T2-17-8 RIMBA RESIDENCE @ BOR KINRARA 58/5"))
+print(res)
+
+# classifier = pipeline("ner", grouped_entities=True)
+# #print(classifier("My name is Sylvain and I work at Hugging Face in Brooklyn. Malaysia, Kuala Lumpur, RIMBA RESIDENCE"))
+# print(classifier("T2-17-8 RIMBA RESIDENCE @ BOR KINRARA 58/5"))
 
 # print(classifier("T2-17-8 RIMBA RESIDENCE @ BOR KINRARA 58/5"))
 # classifier = pipeline("ner", grouped_entities=False, model="malay-huggingface/bert-tiny-bahasa-cased")
